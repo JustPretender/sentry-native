@@ -2,11 +2,19 @@
 
 ## Unreleased
 
-**Fixes**
+**Features**:
 
-- Aligned pre-send event processing in `sentry_capture_event()` with the 
-  [cross-SDK session filter order](https://develop.sentry.dev/sdk/sessions/#filter-order) 
+- Crashpad on Windows is now registered with the Windows Error Reporting (WER) subsystem. ([#735](https://github.com/getsentry/sentry-native/pull/735))
+
+**Fixes**:
+
+- Aligned pre-send event processing in `sentry_capture_event()` with the
+  [cross-SDK session filter order](https://develop.sentry.dev/sdk/sessions/#filter-order)
   ([#729](https://github.com/getsentry/sentry-native/pull/729))
+
+**Internal**:
+
+- Updated Breakpad and Crashpad backends to 2022-07-18. ([#735](https://github.com/getsentry/sentry-native/pull/735))
 
 ## 0.4.18
 
